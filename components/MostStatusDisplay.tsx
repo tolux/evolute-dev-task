@@ -8,7 +8,7 @@ export const MostStatusDisplay: FC<{ statusStatistics: any[] }> = ({
       <div className="col-md-6 col-lg-4">
         <div className="card h-100">
           <div className="card-body">
-            <h5 className="card-title">Status assign most</h5>
+            <h5 className="card-title">Most assign status</h5>
             <p>
               {" "}
               the highest status assign to most characters is :{" "}

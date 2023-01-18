@@ -8,7 +8,7 @@ export const FemaleStaticsDisplay: FC<{ femaleStatistics: any[] }> = ({
       <div className="col-md-6 col-lg-4">
         <div className="card h-100">
           <div className="card-body">
-            <h5 className="card-title">Status assign most</h5>
+            <h5 className="card-title"> Most female characters species</h5>
             <p>
               {" "}
               the highest species with the female characters is :{" "}
