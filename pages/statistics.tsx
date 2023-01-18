@@ -2,7 +2,7 @@ import { Data } from "@/@types";
 import { FemaleStaticsDisplay } from "@/components/FemaleStaticsDisplay";
 import { MostStatusDisplay } from "@/components/MostStatusDisplay";
 import { TopCharactersDisplay } from "@/components/TopCharactersDisplay";
-import { getSingleData } from "@/util/getData";
+import { getData } from "@/util/getData";
 import { useRouter } from "next/router";
 
 export default function Statistics({
@@ -43,7 +43,7 @@ export default function Statistics({
 }
 
 export async function getStaticProps() {
-  const res: Data[] = await getSingleData("http://localhost:3000/api/data");
+  const res: Data[] = await getData("http://localhost:3000/api/data");
 
   const sortTopCharcter = res.sort(
     (a, b) => b.episode.length - a.episode.length
